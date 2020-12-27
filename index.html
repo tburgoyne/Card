@@ -12,6 +12,11 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script src="https://kit.fontawesome.com/bc57d02b5e.js" crossorigin="anonymous"></script>
+		
+		<!-- tooltip -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		
 	</head>
 	<body class="is-preload">
 
@@ -28,10 +33,16 @@
 
 						<footer>
 							<ul class="icons">
-								<li><a href="https://tburgoyne.github.io/" target="_blank" class="icon solid fa-flask">Science</a></li>
-								<li><a href="https://tburgoyne.github.io/photography" target="_blank" class="icon solid fa-camera-retro">Photography</a></li>
-								<li><a href="https://twitter.com/BioBurgoyne" target="_blank" class="icon brands fa-twitter">Twitter</a></li>
-								<li><a href="mailto:t.burgoyne@ucl.ac.uk" target="_blank" class="icon solid fa-envelope">Email</a></li>
+								<li><a href="https://tburgoyne.github.io/" target="_blank" class="icon solid fa-flask" data-toggle="tooltip" data-placement="top" title="Science profile">Science</a></li>
+								<li><a href="https://tburgoyne.github.io/photography" target="_blank" class="icon solid fa-camera-retro" data-toggle="tooltip" data-placement="top" title="Photography">Photography</a></li>
+								<li><a href="https://twitter.com/BioBurgoyne" target="_blank" class="icon brands fa-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">Twitter</a></li>
+								<li><a href="mailto:t.burgoyne@ucl.ac.uk" target="_blank" class="icon solid fa-envelope" data-toggle="tooltip" data-placement="top" title="Send Email">Email</a></li>
+								
+								<script>
+								$(document).ready(function(){
+ 								$('[data-toggle="tooltip"]').tooltip();   
+								});
+								</script>
 							</ul>
 						</footer>
 					</section>
